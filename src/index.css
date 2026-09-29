@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+/* 3D Button Effects & Interactive Depth */
+.btn-3d {
+  position: relative;
+  transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18), 0 6px 12px -2px rgba(0, 0, 0, 0.12);
+  transform: translateY(0);
+}
+
+.btn-3d:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.2), 0 10px 16px -2px rgba(0, 0, 0, 0.15);
+}
+
+.btn-3d:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.22), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Primary Indigo 3D Button */
+.btn-3d-primary {
+  position: relative;
+  background: linear-gradient(180deg, #4f46e5 0%, #4338ca 100%);
+  color: #ffffff;
+  border-bottom: 3px solid #312e81;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.35);
+  transition: all 0.12s ease-in-out;
+}
+
+.btn-3d-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.45);
+  filter: brightness(1.05);
+}
+
+.btn-3d-primary:active {
+  transform: translateY(2px);
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 4px rgba(79, 70, 229, 0.25);
+}
+
+/* Success Emerald 3D Button */
+.btn-3d-emerald {
+  position: relative;
+  background: linear-gradient(180deg, #059669 0%, #047857 100%);
+  color: #ffffff;
+  border-bottom: 3px solid #064e3b;
+  box-shadow: 0 4px 10px rgba(5, 150, 105, 0.35);
+  transition: all 0.12s ease-in-out;
+}
+
+.btn-3d-emerald:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(5, 150, 105, 0.45);
+  filter: brightness(1.05);
+}
+
+.btn-3d-emerald:active {
+  transform: translateY(2px);
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 4px rgba(5, 150, 105, 0.25);
+}
+
+/* White / Light 3D Button */
+.btn-3d-light {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-bottom: 3px solid #cbd5e1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+  transition: all 0.12s ease-in-out;
+}
+
+.btn-3d-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+.btn-3d-light:active {
+  transform: translateY(2px);
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar 3D Interactive Items */
+.sidebar-3d-active {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f3ff 100%);
+  border: 1.5px solid #6366f1;
+  border-bottom: 3.5px solid #4338ca;
+  box-shadow: 0 4px 12px -2px rgba(99, 102, 241, 0.25), 0 2px 4px -1px rgba(99, 102, 241, 0.15);
+  transform: translateY(-1px);
+}
+
+.sidebar-3d-active:active {
+  transform: translateY(1.5px);
+  border-bottom-width: 1.5px;
+  box-shadow: 0 1px 3px rgba(99, 102, 241, 0.2);
+}
+
+.sidebar-3d-idle {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-bottom: 2.5px solid #cbd5e1;
+  box-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-3d-idle:hover {
+  transform: translateY(-2px);
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  border-bottom: 3.5px solid #94a3b8;
+  box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-3d-idle:active {
+  transform: translateY(1.5px);
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* 3D Brand Logo Tile */
+.logo-3d {
+  position: relative;
+  background: linear-gradient(145deg, #4338ca 0%, #312e81 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 4px solid #1e1b4b;
+  box-shadow: 0 6px 14px -1px rgba(67, 56, 202, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-3d:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 18px -1px rgba(67, 56, 202, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.logo-3d:active {
+  transform: translateY(2px);
+  border-bottom-width: 1.5px;
+  box-shadow: 0 2px 6px rgba(67, 56, 202, 0.3);
+}
+
+/* 3D Year & Academic Badge */
+.academic-tag-3d {
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  border-bottom: 2.5px solid #cbd5e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.12s ease;
+}
+
+.academic-tag-3d:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* 3D Pill Badges */
+.badge-3d {
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}

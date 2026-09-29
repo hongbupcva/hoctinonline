@@ -1,0 +1,6 @@
+{
+  "name": "EduTin THPT - Quản lý Học tập & Kiểm tra Tin học",
+  "description": "Hệ thống quản lý học tập, số hóa bài giảng SGK Kết nối tri thức và kiểm tra tự động chấm điểm cho môn Tin học THPT.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
